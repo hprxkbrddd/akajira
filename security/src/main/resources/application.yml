@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: security
+  datasource:
+    url: jdbc:postgresql://localhost:5432/akajira_users
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+      type:
+        descriptor:
+          sql:
+            BasicBinder: trace
+      springframework:
+        security: DEBUG

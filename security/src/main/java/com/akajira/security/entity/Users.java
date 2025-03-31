@@ -20,7 +20,7 @@ public class Users {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private final Long id;
     private final String username;
-    private final String password;
+    private String password;
     private HashSet<GrantedAuthority> authorities;
     private HashSet<Long> tasks;
 }
